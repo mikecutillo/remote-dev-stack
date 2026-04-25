@@ -40,6 +40,11 @@ Most "remote access" setups fall down in two places: they require the target mac
 ![tmux](https://img.shields.io/badge/tmux-1BB91F?style=flat&logo=tmux&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)
 
+## Related in the AIOS Portfolio
+
+- **[Twin Sync](https://github.com/mikecutillo/twin-sync)** — Sibling tool; Mac/PC workflow sync via rsync + shared NAS for dev-environment continuity
+- **[AIOS](https://github.com/mikecutillo/aios)** — The target machine; Next.js dashboard orchestrating 16+ household and business modules
+
 ---
 
 Part of the AIOS portfolio. See the [profile README](https://github.com/mikecutillo) for the full system map.
