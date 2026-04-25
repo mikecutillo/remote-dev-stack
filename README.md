@@ -18,6 +18,25 @@ Most "remote access" setups fall down in two places: they require the target mac
 - **Native macOS Screen Sharing** for other Macs on the mesh
 - **Durable agent sessions** — the agent keeps running even when the user is offline
 
+## Architecture
+
+```mermaid
+graph LR
+    Phone[📱 Phone] --> Mesh
+    iPad[📱 iPad] --> Mesh
+    Laptop[💻 Laptop] --> Mesh
+
+    Mesh[🌐 Tailscale mesh · private addresses · zero-trust] --> MM[🖥️ Mac Mini · always on]
+
+    MM --> SSH[🔐 SSH → tmux]
+    MM --> CRD[🪟 Chrome Remote Desktop]
+    MM --> SS[🖥️ macOS Screen Sharing]
+
+    SSH --> Agent[🤖 Claude Code · persistent session]
+    CRD --> Desktop[Full GUI]
+    SS --> Desktop
+```
+
 ## Software
 
 | Layer | Tech |
